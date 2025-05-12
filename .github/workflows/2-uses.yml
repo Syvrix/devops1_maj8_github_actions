@@ -9,11 +9,16 @@ jobs:
     steps:
       # 1. hur ser du till att repots filer finns tillgängliga?
       #    (tips: det finns en action från GitHub själva för detta)
+      - name: Is files available
+        uses: actions/checkout@v4
       # 2. lista filerna i repot
+      - name: list files in repo
+        run: ls -la
       
 
   print-message:
     runs-on: ubuntu-latest
+    needs: list-files
     # 3. se till att detta jobb endast körs efter att list-files är klart
     steps:
       - name: Meddelande
