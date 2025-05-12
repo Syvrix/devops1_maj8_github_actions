@@ -5,7 +5,7 @@ on:
 
 jobs:
   print-info:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
 
     steps:
       - name: Pipeline is started
