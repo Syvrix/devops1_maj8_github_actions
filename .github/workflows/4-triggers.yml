@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Echo info        
-        run: echo "Workflow triggat av ..." # TODO: uppdatera texten
+        run: echo "Workflow triggat av pull request" # TODO: uppdatera texten
