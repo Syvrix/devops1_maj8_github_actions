@@ -12,4 +12,4 @@ jobs:
         run: echo "Pipeline has started"
 
       - name: Show Python Versions
-        run: python –-version # vad som ska göras
+        run: python --version # vad som ska göras
